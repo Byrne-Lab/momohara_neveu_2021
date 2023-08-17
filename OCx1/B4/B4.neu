@@ -1,0 +1,113 @@
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    >>   modules name: neu		>>
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>---------------------------->------------------------------->
+   THRESHOLD:	  0          > Threshold for transmitter release	>
+>---------------------------->------------------------------->
+   SPIKDUR:	  0.003		     > Spike duration. If equal 0 then >
+				             >  actual time when presynaptic   >
+				             > neuronis above threshold will   >
+				             > be measured                     >
+>---------------------------->------------------------------->
+   VMINIT:	  -60.0          > Initial value of membrane potential. >
+>---------------------------->------------------------------->
+   CM:		    0.0070	     > Membrane capacitance.         >
+>---------------------------->------------------------------->
+
+
+>---------------------------->------------------------------->
+   CONDUCTANCES:             >   List of Conductances        >
+>---------------------------->------------------------------->
+    leak                     >  Name of Conductance          >
+ ../B4/B4_leak.vdg           >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    Na                       >  Name of Conductance          >
+ ../B4/B4_Na.vdg             >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    K                        >  Name of Conductance          >
+ ../B4/B4_K.vdg              >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    KA                       >  Name of Conductance          >
+ ../B4/B4_KA.vdg             >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    CaL                      >  Name of Conductance          >
+ ../B4/B4_CaL.vdg            >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    CaN                      >  Name of Conductance          >
+ ../B4/B4_CaN.vdg            >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    Kcas                     >  Name of Conductance          >
+ ../B4/B4_Kcas.vdg           >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+    Kcaf                     >  Name of Conductance          >
+ ../B4/B4_Kcaf.vdg           >  File Name                    >
+   green                     >  Color name                   >
+>---------------------------->------------------------------->
+        END                  >                               >
+>---------------------------->------------------------------->
+
+
+>---------------------------->------------------------------->
+  LIST_ION:                  >   List of Ion pools           >
+>---------------------------->------------------------------->
+	Ca                       >  Name of Ion                  >
+ ../B4/B4_Ca.ion             >  File Name                    >
+   white                     >  Color name                   >
+>---------------------------->------------------------------->
+        END                  >                               >
+>---------------------------->------------------------------->
+
+
+>---------------------------->------------------------------->
+  CURRENT_TO_ION:            > List of current contributing  >
+                             > to ion pools                  >
+>---------------------------->------------------------------->
+    CaN                      >  Name of Conductance          >
+	Ca                       >  Name of Ion                  >
+   white                     >  Color name                   >
+>---------------------------->------------------------------->
+        END                  >                               >
+>---------------------------->------------------------------->
+
+
+>---------------------------->------------------------------->
+  COND_BY_ION:               >   Regulation of V-dep         >
+                             >   conductances by ion pools   >
+>---------------------------->------------------------------->
+    CaN                      >  Name of Conductance          >
+	Ca                       >  Name of Ion                  >
+ ../B4/Ca_2_CaN.fBR          >  File Name                    >
+   white                     >  Color name                   >
+>---------------------------->------------------------------->
+    Kcaf                     >  Name of Conductance          >
+	Ca                       >  Name of Ion                  >
+ ../B4/Ca_2_Kcaf.fBR         >  File Name                    >
+   red                       >  Color name                   >
+>---------------------------->------------------------------->
+    Kcas                     >  Name of Conductance          >
+	Ca                       >  Name of Ion                  >
+ ../B4/Ca_2_Kcas.fBR         >  File Name                    >
+   orange                    >  Color name                   >
+>---------------------------->------------------------------->
+    CaL                      >  Name of Conductance          >
+	Ca                       >  Name of Ion                  >
+ ../B4/Ca_2_CaL.fBR          >  File Name                    >
+   cyan                      >  Color name                   >
+>---------------------------->------------------------------->
+        END                  >                               >
+>---------------------------->------------------------------->
+
+
+
+END
